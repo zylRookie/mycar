@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/px4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px10dp"
+        android:layout_marginRight="@dimen/px10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCommentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/myBlue" />
+
+        <TextView
+            android:id="@+id/tvContentHuiFu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px4dp"
+            android:layout_marginRight="@dimen/px4dp"
+            android:text="回复"
+            android:textColor="@color/A333333"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCommentToName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/myBlue"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCommentContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/A333333" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Ae9f8ff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOn"
+            android:gravity="center"
+            android:textSize="@dimen/px32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px25dp"
+            android:text="微信" />
+
+        <View
+            android:layout_height="1dp"
+            style="@style/divide_style" />
+
+
+        <TextView
+            android:id="@+id/tvUp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px25dp"
+            android:textSize="@dimen/px32dp"
+            android:text="支付宝" />
+
+        <View
+            android:layout_height="1dp"
+            style="@style/divide_style" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

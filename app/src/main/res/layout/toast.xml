@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/toast_type"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp"
+    android:shadowColor="#BB000000"
+    android:textSize="16dp"
+    android:shadowRadius="2.75"
+    android:textColor="@color/white"
+    tools:text="一蓑烟雨任平生" />

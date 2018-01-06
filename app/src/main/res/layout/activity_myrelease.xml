@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px74dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/flTwoCar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="二手车"
+                android:textColor="@color/A36617c"
+                android:textSize="@dimen/px32dp" />
+
+            <TextView
+                android:id="@+id/viewBlue"
+                android:layout_width="@dimen/px160dp"
+                android:layout_height="@dimen/px6dp"
+                android:layout_gravity="center|bottom"
+                android:background="@color/A15508a"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flOldGoods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="闲置物品"
+                android:textColor="@color/A36617c"
+                android:textSize="@dimen/px32dp" />
+
+            <TextView
+                android:id="@+id/viewBlueTwo"
+                android:layout_width="@dimen/px160dp"
+                android:layout_height="@dimen/px6dp"
+                android:layout_gravity="center|bottom"
+                android:background="@color/A15508a"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/AF6F6F6" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <in.srain.cube.views.ptr.PtrFrameLayout
+            android:id="@+id/ptrFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="2.0"
+            cube_ptr:ptr_resistance="2.0">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_myRelease"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+
+
+        <TextView
+            android:id="@+id/tvNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/px10dp"
+            android:drawableTop="@mipmap/bgzero"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/myBlue"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

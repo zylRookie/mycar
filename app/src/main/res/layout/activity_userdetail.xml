@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgregister"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="基本信息"
+            android:textColor="@color/A0c59a3"
+            android:textSize="@dimen/px42dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px42dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="@dimen/px170dp"
+                android:layout_height="@dimen/px70dp"
+                android:background="@drawable/textview_bg"
+                android:gravity="center"
+                android:text="用户名："
+                android:textColor="@color/A333333" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px42dp"
+                android:layout_marginRight="@dimen/px20dp">
+
+                <EditText
+                    android:id="@+id/etnUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px42dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/px170dp"
+                android:layout_height="@dimen/px70dp"
+                android:background="@drawable/textview_bg"
+                android:gravity="center"
+                android:text="注册地："
+                android:textColor="@color/A333333" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px42dp"
+                android:layout_marginRight="@dimen/px20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvAreas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/px20dp"
+                        android:drawableRight="@mipmap/triangle"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px34dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px42dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="@dimen/px170dp"
+                android:layout_height="@dimen/px70dp"
+                android:background="@drawable/textview_bg"
+                android:gravity="center"
+                android:text="性    别："
+                android:textColor="@color/A333333" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px42dp"
+                android:layout_marginRight="@dimen/px20dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/px20dp"
+                    android:drawableRight="@mipmap/triangle"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px34dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:background="@drawable/button_select"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px34dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

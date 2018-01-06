@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/px20dp"
+    android:layout_marginLeft="@dimen/px10dp"
+    android:layout_marginRight="@dimen/px10dp"
+    android:layout_marginBottom="@dimen/px20dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="@dimen/px10dp"
+        android:background="@color/AF6F6F6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/px20dp"
+            android:text="标志407 2.2 冠军限量版"
+            android:textSize="@dimen/px28dp"
+            android:textColor="@color/A333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+
+                android:text="2015年5月"
+                android:textSize="@dimen/px24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:text="7.8万"
+                android:gravity="right"
+                android:textColor="@color/A36617c"
+                android:textStyle="bold"
+                android:textSize="@dimen/px36dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

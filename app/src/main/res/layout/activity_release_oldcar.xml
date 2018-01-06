@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/px60dp"-->
+            <!--android:background="@color/Ae9f8ff"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/px28dp"-->
+            <!--android:text="标  题"-->
+            <!--android:textColor="@color/A333333"-->
+            <!--android:textSize="@dimen/px32dp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/px28dp"-->
+            <!--android:text="(必填) 20字以内"-->
+            <!--android:textColor="@color/Af90000"-->
+            <!--android:textSize="@dimen/px26dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/px126dp"-->
+            <!--android:background="@color/white">-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/etContent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="@dimen/px12dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="top"-->
+            <!--android:hint="标致407 2.2 冠军限量版..."-->
+            <!--android:lineSpacingExtra="3dp"-->
+            <!--android:lineSpacingMultiplier="1.2"-->
+            <!--android:maxLength="20"-->
+            <!--android:minLines="2"-->
+            <!--android:padding="@dimen/px24dp"-->
+            <!--android:textSize="@dimen/px30dp" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px60dp"
+                android:background="@color/Ae9f8ff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px28dp"
+                    android:text="填写资料"
+                    android:textColor="@color/A333333"
+                    android:textSize="@dimen/px32dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px28dp"
+                    android:text="(必填)"
+                    android:textColor="@color/Af90000"
+                    android:textSize="@dimen/px26dp" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/px80dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/px40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="品牌"-->
+            <!--android:textSize="@dimen/px30dp" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="@dimen/px60dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginRight="@dimen/px28dp">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@mipmap/sort" />-->
+            <!--</RelativeLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/divide_dark_style" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px80dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textViewM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px40dp"
+                        android:text="标题"
+                        android:textSize="@dimen/px32dp" />
+
+                    <EditText
+                        android:id="@+id/etContent"
+                        style="@style/edit_style_edit"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px42dp"
+                        android:layout_marginRight="@dimen/px42dp"
+                        android:hint="请填写标题"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <View style="@style/divide_dark_style" />
+
+                <LinearLayout
+                    android:id="@+id/llOldCarType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px80dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px40dp"
+                            android:text="车型"
+                            android:textSize="@dimen/px32dp" />
+
+                        <EditText
+                            android:id="@+id/etnCarType"
+                            style="@style/edit_style_edit"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px42dp"
+                            android:layout_marginRight="@dimen/px42dp"
+                            android:hint="请填写车型"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+                    </LinearLayout>
+
+                    <View style="@style/divide_dark_style" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px80dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px40dp"
+                            android:text="品牌"
+                            android:textSize="@dimen/px32dp" />
+
+                        <TextView
+                            android:id="@+id/tvCarStar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/px42dp"
+                            android:layout_marginRight="@dimen/px42dp"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/px20dp"
+                            android:drawableRight="@mipmap/sort"
+                            android:gravity="center|left"
+                            android:hint="请选择品牌"
+                            android:textColor="@color/A333333"
+                            android:textSize="@dimen/px34dp" />
+                        <!--<TextView-->
+                        <!--android:id="@+id/etnCarTime"-->
+                        <!--style="@style/edit_style"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginRight="@dimen/px42dp"-->
+                        <!--android:hint="请选择年份"-->
+                        <!--android:imeOptions="actionDone"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textCursorDrawable="@null" />
+                    -->
+                    </LinearLayout>
+
+                    <View style="@style/divide_dark_style" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px80dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px40dp"
+                            android:text="年份"
+                            android:textSize="@dimen/px32dp" />
+
+                        <TextView
+                            android:id="@+id/etnCarTime"
+                            style="@style/edit_style_edit"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px42dp"
+                            android:layout_marginRight="@dimen/px42dp"
+                            android:hint="请选择年份"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+                    </LinearLayout>
+
+                    <View style="@style/divide_dark_style" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px80dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px40dp"
+                            android:text="排量"
+                            android:textSize="@dimen/px32dp" />
+
+                        <EditText
+                            android:id="@+id/etnCarL"
+                            style="@style/edit_style_edit"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px42dp"
+                            android:layout_marginRight="@dimen/px42dp"
+                            android:hint="请填写排量"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+                    </LinearLayout>
+
+                    <View style="@style/divide_dark_style" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px80dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px40dp"
+                        android:text="价格"
+                        android:textSize="@dimen/px32dp" />
+
+                    <EditText
+                        android:id="@+id/etnCarMoney"
+                        style="@style/edit_style_edit"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px42dp"
+                        android:layout_marginRight="@dimen/px42dp"
+                        android:hint="请填写价格"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px60dp"
+                android:background="@color/Ae9f8ff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px28dp"
+                    android:text="上传图片"
+                    android:textColor="@color/A333333"
+                    android:textSize="@dimen/px32dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px28dp"
+                    android:text="(必填)"
+                    android:textColor="@color/Af90000"
+                    android:textSize="@dimen/px26dp" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/px70dp"-->
+            <!--android:layout_height="@dimen/px70dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@mipmap/addp" />-->
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px60dp"
+                android:background="@color/Ae9f8ff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px28dp"
+                    android:text="车辆描述"
+                    android:textColor="@color/A333333"
+                    android:textSize="@dimen/px32dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px28dp"
+                    android:text="(选填)"
+                    android:textColor="@color/A44b0f4"
+                    android:textSize="@dimen/px26dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/etnBakDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/px12dp"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:lineSpacingExtra="3dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:minLines="2"
+                    android:padding="@dimen/px24dp"
+                    android:textSize="@dimen/px32dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:background="@color/bottom"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnRelease"
+            android:layout_width="@dimen/px160dp"
+            android:layout_height="@dimen/px60dp"
+            android:background="@drawable/selector_btn_bottom"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px30dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

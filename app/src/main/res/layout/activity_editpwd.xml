@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgregister"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px100dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px42dp"
+            android:background="@mipmap/addtext"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px42dp"
+                android:text="输入旧密码："
+                android:textColor="@color/A333333" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@color/A333333"
+                android:textSize="@dimen/px24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@mipmap/addtext"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px42dp"
+                android:text="输入新密码："
+                android:textColor="@color/A333333" />
+
+            <EditText
+                android:id="@+id/etIdentifyCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/A333333"
+                android:textSize="@dimen/px24dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@mipmap/addtext"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px42dp"
+                android:text="再次输入新密码："
+                android:textColor="@color/A333333" />
+
+            <EditText
+                android:id="@+id/etnEditOkPwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/A333333"
+                android:textSize="@dimen/px24dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:background="@drawable/button_select"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px34dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

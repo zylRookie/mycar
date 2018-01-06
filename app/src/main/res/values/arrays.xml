@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="provinces">
+
+        <item>好友昵称</item>
+        <item>好友昵称</item>
+        <item>彩笔</item>
+        <item>沙雕</item>
+        <item>二逼</item>
+        <item>贵德</item>
+
+        <item>A</item>
+        <item>a</item>
+        <item>b</item>
+        <item>d</item>
+
+        <item>.a</item>
+        <item>;b</item>
+        <item>#c</item>
+        <item>d</item>
+
+        <item>ab</item>
+        <item>aa</item>
+    </string-array>
+
+
+</resources>

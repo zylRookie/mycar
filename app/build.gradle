@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+
+def buildSdkVersion = 26
+def buildToolVersion = "26.0.1"
+def supportVersion = "26.+"
+
+android {
+    compileSdkVersion buildSdkVersion
+    buildToolsVersion buildToolVersion
+    defaultConfig {
+        applicationId "com.example.zyl.dqcar"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.1.1"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                "GETUI_APP_ID"    : "xoz6L7nsR77mTlxfXacZy6",
+                "GETUI_APP_KEY"   : "DCvAHboMhm6WbWUFOPxwd7",
+                "GETUI_APP_SECRET": "lohbI7MR9jAVl9ZEpXyFY3"
+        ]
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'dqkeystore'
+            keyPassword '123456a'
+            storeFile new File(getRootDir(), "keystore.jks")
+            storePassword '123456a'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    repositories {
+        flatDir {
+            dirs "libs"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:' + supportVersion
+    compile 'com.android.support:design:' + supportVersion
+    compile 'com.android.support:recyclerview-v7:' + supportVersion
+    compile 'com.android.support:cardview-v7:' + supportVersion
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.bm.photoview:library:1.4.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    //    compile 'com.bigkoo:alertview:1.0.2'
+    //banner
+    compile 'com.youth.banner:banner:1.4.9'
+    //通讯录
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+    compile 'com.github.mcxtzhang:SuspensionIndexBar:V1.0.0'
+    //选择图片
+    compile 'me.iwf.photopicker:PhotoPicker:0.9.5@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //沉浸式
+    compile 'com.gyf.barlibrary:barlibrary:2.2.5'
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile(name: 'UltraPullToRefresh', ext: 'aar')
+    compile files('libs/aliyun-oss-sdk-android-2.0.1.1.jar')
+    compile files('libs/okhttp-2.6.0.jar')
+    compile 'top.zibin:Luban:1.1.2'
+    compile 'com.alibaba:fastjson:1.2.35'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'com.sackcentury:shinebutton:0.1.9'
+    compile 'com.bigkoo:alertview:1.0.3'
+    compile files('libs/alipaySdk-20151112.jar')
+    compile files('libs/libammsdk.jar')
+    compile 'com.github.CPPAlien:ChatKeyboard:1.0.7'
+    compile files('libs/json_simple-1.1.jar')
+    compile 'com.getui:sdk:2.11.1.0'
+    compile 'cjt.library.wheel:camera:1.1.3' //拍摄
+    compile 'javazoom:jlayer:1.0.1'//java获取音频时长jar
+    compile 'com.github.addappcn:android-pickers:1.0.1'//地址选择
+    compile 'com.lovedise:permissiongen:0.0.6'//权限管理
+}

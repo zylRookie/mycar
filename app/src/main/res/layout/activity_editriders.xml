@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <!--<EditText-->
+    <!--android:id="@+id/etnContent"-->
+    <!--android:gravity="top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:background="@null"-->
+    <!--android:hint="这一刻的想法..."-->
+    <!--android:padding="20dp" />-->
+
+    <EditText
+        android:id="@+id/etnContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px300dp"
+        android:layout_marginTop="@dimen/px12dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="写出你想说的话！！"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:minLines="6"
+        android:padding="@dimen/px24dp"
+        android:textColorHint="#B7B7B7"
+        android:textSize="@dimen/px30dp" />
+
+    <View
+        style="@style/divide_style"
+        android:layout_height="@dimen/px2dp"
+        android:layout_marginBottom="@dimen/px4dp"
+        android:layout_marginTop="@dimen/px4dp"
+        android:background="@color/AF3F3F3" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!--<EditText-->
+    <!--android:id="@+id/etContent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/px300dp"-->
+    <!--android:layout_marginTop="@dimen/px12dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="top"-->
+    <!--android:hint="写出你想说的话！！"-->
+    <!--android:lineSpacingExtra="3dp"-->
+    <!--android:lineSpacingMultiplier="1.2"-->
+    <!--android:minLines="6"-->
+    <!--android:padding="@dimen/px24dp"-->
+    <!--android:textColorHint="#B7B7B7"-->
+    <!--android:textSize="@dimen/px30dp" />-->
+
+    <!--<View-->
+    <!--style="@style/divide_style"-->
+    <!--android:layout_height="@dimen/px2dp"-->
+    <!--android:layout_marginBottom="@dimen/px4dp"-->
+    <!--android:layout_marginTop="@dimen/px4dp" />-->
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recyclerView_add"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/px100dp"
+            android:layout_marginLeft="@dimen/px120dp"
+            android:layout_marginRight="@dimen/px120dp"
+            android:background="@drawable/selector_btn_bottom"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px38dp" />
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivPhoto"-->
+    <!--android:src="@mipmap/ic_launcher"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+</LinearLayout>

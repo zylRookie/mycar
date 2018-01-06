@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <View
+        style="@style/divide_style"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/px28dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px84dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/etnSearchFriendsNext"
+            android:layout_width="@dimen/px84dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/magnifier" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etnSearchFriends"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px84dp"
+            android:layout_marginLeft="@dimen/px90dp"
+            android:background="@null"
+            android:hint="查找好友/查找车友"
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/px10dp"
+            android:textColorHint="@color/A36617c" />
+    </RelativeLayout>
+
+
+    <View
+        style="@style/divide_style"
+        android:layout_height="1dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_findCarMan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px28dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

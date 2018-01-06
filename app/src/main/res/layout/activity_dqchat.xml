@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px98dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll_layout"
+        android:background="@mipmap/bgtitle">
+
+        <ImageView
+            android:id="@+id/ivBaseBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:clickable="true"
+            android:padding="@dimen/px22dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tvBaseLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ivBaseBack"
+            android:layout_toRightOf="@+id/ivBaseBack"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px34dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px200dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_toLeftOf="@+id/rlRight">
+
+            <ImageView
+                android:id="@+id/ivRightImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlRight"
+            android:layout_width="@dimen/px80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px10dp">
+
+            <ImageView
+                android:id="@+id/ivRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.hadcn.keyboard.ChatKeyboardLayout
+            android:id="@+id/kv_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:faceIcon="@mipmap/icon_face_nomal"
+            app:keyboardStyle="chat_style"
+            app:leftDefaultIcon="@drawable/btn_voice_or_text"
+            app:leftSecondIcon="@drawable/btn_voice_or_text_keyboard"
+            app:rightIcon="@drawable/btn_multi_bg"
+            app:sendButtonBackground="@drawable/send_button_bg"
+            app:sendButtonTextColor="@color/white"
+            app:showRightIcon="true">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/titleLayout">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </cn.hadcn.keyboard.ChatKeyboardLayout>
+
+        <cn.hadcn.keyboard.RecordingLayout
+            android:id="@+id/recording_area"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

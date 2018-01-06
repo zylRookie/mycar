@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgregister"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注  册"
+            android:textColor="@color/A0c59a3"
+            android:textSize="@dimen/px42dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px42dp"
+            android:background="@mipmap/addtext">
+            <TextView
+                android:text="输入手机号："
+                android:layout_marginLeft="@dimen/px42dp"
+                android:textColor="@color/A333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etMyPhone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="@dimen/px24dp"
+                android:background="@null"
+                android:textColor="@color/A333333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@mipmap/addtext">
+            <TextView
+                android:text="输入验证码："
+                android:layout_marginLeft="@dimen/px42dp"
+                android:textColor="@color/A333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etMyCode"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="@dimen/px24dp"
+                android:background="@null"
+                android:textColor="@color/A333333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="@color/A145899"
+                android:id="@+id/tvGetIdentifyCode"
+                android:layout_width="@dimen/px200dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="获取验证码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@mipmap/addtext">
+            <TextView
+                android:text="输入密码："
+                android:layout_marginLeft="@dimen/px42dp"
+                android:textColor="@color/A333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etFirstPwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:textSize="@dimen/px24dp"
+                android:background="@null"
+                android:textColor="@color/A333333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:layout_marginRight="@dimen/px42dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@mipmap/addtext">
+            <TextView
+                android:text="再次输入密码："
+                android:layout_marginLeft="@dimen/px42dp"
+                android:textColor="@color/A333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etOkPwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:textSize="@dimen/px24dp"
+                android:background="@null"
+                android:textColor="@color/A333333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+       <Button
+           android:id="@+id/btnRegister"
+           android:text="注      册"
+           android:textSize="@dimen/px34dp"
+           android:textColor="@color/white"
+           android:layout_marginLeft="@dimen/px42dp"
+           android:layout_marginRight="@dimen/px42dp"
+           android:background="@drawable/button_select"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/px70dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

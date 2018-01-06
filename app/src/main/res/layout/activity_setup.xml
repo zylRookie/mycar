@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+
+    <View
+        style="@style/divide_style"
+        android:layout_marginTop="@dimen/px40dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlEditPwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:textColor="@color/A333333" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px40dp"
+            android:src="@mipmap/iv_right" />
+
+    </RelativeLayout>
+
+    <View style="@style/divide_style" />
+
+    <View
+        style="@style/divide_style"
+        android:layout_marginTop="@dimen/px20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="绑定手机"
+            android:textColor="@color/A333333" />
+
+        <TextView
+            android:id="@+id/tvBindPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_toLeftOf="@+id/imageView"
+            android:textColor="@color/myBlue"
+            android:textSize="@dimen/px32dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px40dp"
+            android:src="@mipmap/iv_right" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/divide_style" />
+
+    <View
+        style="@style/divide_style"
+        android:layout_marginTop="@dimen/px20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_centerVertical="true"
+            android:text="版本信息"
+            android:textColor="@color/A333333" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_toLeftOf="@+id/ivRightImg"
+            android:textColor="@color/myBlue"
+            android:textSize="@dimen/px32dp" />
+
+        <ImageView
+            android:id="@+id/ivRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px40dp"
+            android:src="@mipmap/iv_right" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/divide_style" />
+
+
+    <View
+        style="@style/divide_style"
+        android:layout_marginTop="@dimen/px20dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlBack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_centerVertical="true"
+            android:text="退出登录"
+            android:textColor="@color/A333333" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px40dp"
+            android:src="@mipmap/iv_right" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/divide_style" />
+
+
+</LinearLayout>

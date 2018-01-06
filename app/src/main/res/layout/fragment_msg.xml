@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/px60dp"-->
+    <!--android:background="@color/AF6F6F6">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivGroup"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/px28dp"-->
+    <!--android:src="@mipmap/newgroup" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/px26dp"-->
+    <!--android:layout_toEndOf="@+id/ivGroup"-->
+    <!--android:layout_toRightOf="@+id/ivGroup"-->
+    <!--android:text="群聊"-->
+    <!--android:textColor="@color/A333333"-->
+    <!--android:textSize="@dimen/px28dp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recyclerView_msgOne"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"></android.support.v7.widget.RecyclerView>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/px60dp"-->
+    <!--android:background="@color/AF6F6F6">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivGroupOne"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/px28dp"-->
+    <!--android:src="@mipmap/oneman" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/px26dp"-->
+    <!--android:layout_toEndOf="@+id/ivGroupOne"-->
+    <!--android:layout_toRightOf="@+id/ivGroupOne"-->
+    <!--android:text="车友"-->
+    <!--android:textColor="@color/A333333"-->
+    <!--android:textSize="@dimen/px28dp" />-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:background="@color/white"-->
+    <!--android:id="@+id/recyclerView_msg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="暂无数据" />-->
+    <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/contactitem_layout"
+        style="@style/MMListItem"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:padding="10dip">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivRidersHead"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/defheadtwo"
+            app:riv_border_color="@color/white"
+            app:riv_corner_radius="4dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="10dip">
+
+            <TextView
+                android:id="@+id/tvRidersName"
+                style="@style/MMFontTitleInList"
+                android:layout_marginBottom="5dp"
+                android:text="昵称"
+                android:textColor="@color/myBlue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvRidersContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRidersName"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="@dimen/px10dp"
+                android:autoLink="all"
+                android:textColor="@color/A333333" />
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/layout_photo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/txt_msg"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:gravity="center_vertical">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_photo1"-->
+            <!--android:layout_width="80.0dip"-->
+            <!--android:layout_height="80.0dip"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@mipmap/gr" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_photo2"-->
+            <!--android:layout_width="80.0dip"-->
+            <!--android:layout_height="80.0dip"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@mipmap/gr" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_photo3"-->
+            <!--android:layout_width="80.0dip"-->
+            <!--android:layout_height="80.0dip"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@mipmap/gr" />-->
+            <!--</LinearLayout>-->
+
+            <FrameLayout
+                android:id="@+id/flPhotoMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRidersContent"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/flVideo"
+                    android:layout_width="@dimen/px200dp"
+                    android:layout_height="@dimen/px300dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="@dimen/px80dp"
+                        android:layout_height="@dimen/px80dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/videoplay" />
+                </FrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/layout_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px60dp"></android.support.v7.widget.RecyclerView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/llTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flPhotoMovie"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRidersTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="2017-10-18"
+                    android:textColor="@color/A333333"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvRidersDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px40dp"
+                        android:text="删除"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/ivGoods"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/px10dp"-->
+                <!--android:layout_marginRight="@dimen/px10dp"-->
+                <!--android:src="@mipmap/gogoodsoff" />-->
+
+                <com.sackcentury.shinebuttonlib.ShineButton
+                    android:id="@+id/ivSbButton"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/px10dp"
+                    android:layout_marginRight="@dimen/px18dp"
+                    android:elevation="10dp"
+                    app:btn_color="@android:color/darker_gray"
+                    app:btn_fill_color="#eb2626"
+                    app:siShape="@raw/heart" />
+
+                <ImageView
+                    android:id="@+id/ivComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px15dp"
+                    android:src="@mipmap/riders_msg" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llTimeLayout"
+                android:background="@color/AF3F3F3"
+                android:padding="@dimen/px6dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px10dp"
+                    android:src="@mipmap/gogoodson" />
+
+                <TextView
+                    android:id="@+id/tvZanName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/myBlue" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/llComment"
+                android:background="#e4e3e3"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine"
+                android:background="#f6f6f6"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/divide_style"
+        android:layout_height="1dp"
+        android:background="@color/AF6F6F6" />
+</LinearLayout>

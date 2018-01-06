@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llAccountCenter"
+        style="@style/mine_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:src="@mipmap/account_center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:text="@string/account_center"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMyRelease"
+        style="@style/mine_content"
+        android:layout_marginTop="@dimen/px28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:src="@mipmap/my_release" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:text="@string/my_release"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+    </LinearLayout>
+
+    <View style="@style/divide_style" />
+
+    <LinearLayout
+        android:id="@+id/llMyPhone"
+        style="@style/mine_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:src="@mipmap/my_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:text="@string/my_phone"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMyCollection"
+        style="@style/mine_content"
+        android:layout_marginTop="@dimen/px28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:src="@mipmap/my_collection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:text="@string/my_collection"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+    </LinearLayout>
+
+    <View style="@style/divide_style" />
+
+    <LinearLayout
+        android:id="@+id/llGiftMall"
+        style="@style/mine_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:src="@mipmap/gift_mall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:text="@string/gift_mall"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNewsContent"
+        style="@style/mine_content"
+        android:layout_marginTop="@dimen/px28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:src="@mipmap/news_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:text="@string/news_content"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+    </LinearLayout>
+
+    <View style="@style/divide_style" />
+
+    <LinearLayout
+        android:id="@+id/llSetUp"
+        style="@style/mine_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:src="@mipmap/set_up" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px28dp"
+            android:text="设      置"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

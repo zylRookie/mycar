@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">车汇宝</string>
+
+
+    <string name="edit_name">修改/命名></string>
+    <string name="user_name">昵称</string>
+    <string name="account_center">账户中心</string>
+    <string name="my_release">我的发布</string>
+    <string name="my_phone">我的相册</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="gift_mall">礼品商城</string>
+    <string name="news_content">新闻中心</string>
+
+
+</resources>

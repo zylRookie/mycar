@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/px20dp">
+
+        <ImageView
+            android:id="@+id/ivNewsUrl"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/car" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNewsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="奥迪携手《异形》"
+                android:textColor="@color/A333333"
+                android:textSize="@dimen/px30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNewsDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:maxLines="3"
+                android:textSize="@dimen/px24dp" />
+
+            <TextView
+                android:id="@+id/tvNewsTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text="2016年10月"
+                android:textColor="@color/A333333" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/divide_dark_style" />
+
+
+</LinearLayout>

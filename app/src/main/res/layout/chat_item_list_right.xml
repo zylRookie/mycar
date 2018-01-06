@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/px10dp">
+
+    <TextView
+        android:id="@+id/tvChatTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px10dp"
+        android:background="@drawable/time_type"
+        android:padding="@dimen/px6dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px24dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px160dp"
+        android:layout_marginRight="@dimen/px5dp">
+
+        <ImageView
+            android:id="@+id/ivChatAvatar"
+            style="@style/chat_item_avatar"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/px4dp" />
+
+        <TextView
+            android:id="@+id/tvChatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px13dp"
+            android:layout_toLeftOf="@id/ivChatAvatar"
+            android:textSize="@dimen/px24dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/chat_item_layout_content"
+            style="@style/chat_item_content"
+            android:layout_below="@+id/tvChatName"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px10dp"
+            android:layout_marginTop="@dimen/px2dp"
+            android:layout_toLeftOf="@id/ivChatAvatar"
+            android:background="@drawable/chat_to_bg_selector"
+            android:padding="@dimen/px20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvChatContent"
+                style="@style/chat_item_text_content"
+                android:layout_marginRight="@dimen/px4dp"
+                android:autoLink="all"
+                android:linksClickable="true" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/ivChatPicture"-->
+            <!--style="@style/chat_item_image_content" />-->
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/flChatVideo"-->
+            <!--android:layout_width="@dimen/px200dp"-->
+            <!--android:layout_height="@dimen/px300dp"-->
+            <!--android:visibility="gone">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/ivChatVideo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="centerCrop" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/px80dp"-->
+            <!--android:layout_height="@dimen/px80dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@mipmap/videoplay" />-->
+            <!--</FrameLayout>-->
+
+            <!--信号栏-->
+            <LinearLayout
+                android:id="@+id/llChatRecord"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignRight="@+id/tvChatRecordLength"
+                android:layout_centerVertical="true"
+                android:background="@drawable/anim_yuyin_sign_right"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvChatRecordLength"
+                android:layout_width="@dimen/px80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone" />
+            <!--<ImageView-->
+            <!--android:id="@+id/ivChatSound"-->
+            <!--android:src=""-->
+            <!--style="@style/chat_item_image_content" />-->
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flChatPictureLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChatName"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px10dp"
+            android:layout_marginTop="@dimen/px4dp"
+            android:layout_toLeftOf="@id/ivChatAvatar"
+            android:visibility="gone">
+
+            <com.example.zyl.dqcar.view.BubbleImageView
+                android:id="@+id/bivChatPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ivChatVideoType"
+                android:layout_width="@dimen/px60dp"
+                android:layout_height="@dimen/px60dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/videoplay"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ivChatEmoticons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChatName"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px10dp"
+            android:layout_marginTop="@dimen/px4dp"
+            android:layout_toLeftOf="@id/ivChatAvatar"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/chat_item_progress"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/chat_item_layout_content"
+            android:visibility="gone" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_hot"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:background="@color/background_tab_pressed"-->
+        <!--android:gravity="center"-->
+        <!--android:text="网上门店" />-->
+    </RelativeLayout>
+
+</LinearLayout>

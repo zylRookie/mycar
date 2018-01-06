@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FC3E32</color>
+    <color name="myBlue">#3b95c4</color>
+    <color name="A36617c">#36617c</color>
+    <color name="Ab0e0fd">#b0e0fd</color>
+    <color name="A44b0f4">#44b0f4</color>
+    <color name="AF6F6F6">#F6F6F6</color>
+    <color name="AF7F7F7">#F7F7F7</color>
+    <color name="A15508a">#15508a</color>
+    <color name="Ae3f5fc">#e3f5fc</color>
+    <color name="A145899">#145899</color>
+    <color name="A313b44">#313b44</color>
+    <color name="Ae9f8ff">#e9f8ff</color>
+    <color name="A333333">#333333</color>
+    <color name="Af90000">#f90000</color>
+    <color name="Ad9d9d9">#d9d9d9</color>
+    <color name="bottom">#4b4a4a</color>
+    <color name="A3386bf">#3386bf</color>
+    <color name="A135da4">#135da4</color>
+    <color name="A0c59a3">#0c59a3</color>
+    <color name="Aa9a9a9">#a9a9a9</color>
+    <color name="A3798d1">#3798d1</color>
+    <color name="AF3F3F3">#F3F3F3</color>
+    <color name="AF1F1F1">#F1F1F1</color>
+    <color name="AF0F0F0">#F0F0F0</color>
+    <color name="onLine">#efcc1a</color>
+
+
+    <color name="partTranslucent">#00000000</color>
+    <color name="A999999">#999999</color>
+
+    <color name="transparent">#01000000</color>
+    <color name="divider_line_color">#E5E5E5</color>
+    <color name="colorBlack">#FF000000</color>
+
+
+
+
+
+</resources>

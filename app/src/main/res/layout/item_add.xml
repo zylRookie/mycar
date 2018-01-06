@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<me.iwf.photopicker.widget.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px200dp"
+    android:layout_height="@dimen/px200dp"
+    android:background="@drawable/bg_item_photo"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:src="@mipmap/addiv" />
+
+</me.iwf.photopicker.widget.SquareItemLayout>
+

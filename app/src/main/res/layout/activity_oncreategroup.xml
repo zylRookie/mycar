@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px136dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_style"
+            android:text="群头像" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivGroupHead"
+                android:layout_width="@dimen/px104dp"
+                android:layout_height="@dimen/px104dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/px42dp"
+                android:src="@mipmap/defheadtwo" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/divide_style" />
+
+    <RelativeLayout
+        android:id="@+id/rlGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_centerVertical="true"
+            android:text="群类型" />
+
+        <TextView
+            android:id="@+id/tvGroupType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px20dp"
+            android:layout_toLeftOf="@+id/imageView"
+            android:gravity="center_vertical|right"
+            android:hint="请选择群类型"
+            android:textColor="@color/A333333"
+            android:textSize="@dimen/px32dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px40dp"
+            android:src="@mipmap/iv_right" />
+
+    </RelativeLayout>
+
+    <View style="@style/divide_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style"
+            android:text="群昵称" />
+
+        <EditText
+            android:id="@+id/editGroupName"
+            style="@style/edit_style"
+            android:layout_marginRight="@dimen/px76dp"
+            android:hint="请填写群昵称"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/A333333"
+            android:textCursorDrawable="@null" />
+
+    </LinearLayout>
+
+    <View style="@style/divide_style" />
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ivMailDetailHead"
+            android:layout_width="@dimen/px160dp"
+            android:layout_height="@dimen/px160dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px42dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/newdefhead" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px60dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMailDetailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/A145899"
+                    android:textSize="@dimen/px36dp" />
+
+                <TextView
+                    android:id="@+id/tvMailDetailPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/px28dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/A145899" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96dp"
+        android:layout_marginTop="@dimen/px40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvTag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px60dp"
+            android:layout_marginRight="@dimen/px28dp"
+            android:gravity="center|left"
+            android:text="个性签名："
+            android:textColor="@color/A145899"
+            android:textSize="@dimen/px32dp" />
+
+        <TextView
+            android:id="@+id/tvMailDetailBak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px10dp"
+            android:layout_marginRight="@dimen/px10dp"
+            android:layout_toEndOf="@+id/tvTag"
+            android:layout_toRightOf="@+id/tvTag"
+            android:gravity="center|left"
+            android:textSize="@dimen/px32dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px160dp"
+        android:layout_marginTop="@dimen/px40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTry"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px60dp"
+            android:layout_marginRight="@dimen/px40dp"
+            android:gravity="center"
+            android:text="个人相册"
+            android:textColor="@color/A145899"
+            android:textSize="@dimen/px36dp" />
+
+        <LinearLayout
+            android:id="@+id/llStartPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_H"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnMailDetailSendMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px100dp"
+            android:layout_marginRight="@dimen/px100dp"
+            android:layout_marginTop="@dimen/px140dp"
+            android:background="@drawable/selector_btn_bottom"
+            android:text="发  消  息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px38dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

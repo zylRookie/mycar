@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px136dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_style"
+            android:text="头像" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivHead"
+                android:layout_width="@dimen/px104dp"
+                android:layout_height="@dimen/px104dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/px42dp"
+                android:src="@mipmap/defheadtwo" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px34dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px96dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_style"
+                android:text="名字" />
+
+            <EditText
+                android:id="@+id/edit_userName"
+                style="@style/edit_style"
+                android:layout_marginRight="@dimen/px42dp"
+                android:hint="请填写姓名"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/A333333"
+                android:textCursorDrawable="@null" />
+
+        </LinearLayout>
+
+        <View style="@style/divide_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px96dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_style"
+                android:text="注册地" />
+
+            <TextView
+                android:id="@+id/tvPath"
+                style="@style/edit_style"
+                android:layout_marginRight="@dimen/px42dp"
+                android:hint="请选择注册地"
+                android:textColor="@color/A333333"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <View style="@style/divide_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px96dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/text_style"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tvSex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px42dp"
+                android:gravity="right|center"
+                android:hint="请选择性别"
+                android:textColor="@color/A333333" />
+        </LinearLayout>
+
+        <View style="@style/divide_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px96dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_style"
+                android:text="个性签名" />
+
+            <EditText
+                android:id="@+id/etnBak"
+                style="@style/edit_style"
+                android:layout_marginRight="@dimen/px42dp"
+                android:hint="这家伙很懒，什么也没留下！！"
+                android:textColor="@color/A333333"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnMotifyPwd"
+            android:layout_width="@dimen/px501dp"
+            android:layout_height="@dimen/px92dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/px40dp"
+            android:background="@drawable/selector_btn_bottom"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px38dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

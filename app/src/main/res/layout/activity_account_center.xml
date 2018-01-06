@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AF6F6F6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@mipmap/bgtitle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px383dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px41dp">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px98dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/ivBaseBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px20dp"
+                android:clickable="true"
+                android:padding="@dimen/px22dp"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/tvBaseLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivBaseBack"
+                android:layout_toRightOf="@+id/ivBaseBack"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px34dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/px200dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px244dp"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivUserHead"
+                android:layout_width="@dimen/px160dp"
+                android:layout_height="@dimen/px160dp"
+                android:src="@mipmap/def_head" />
+
+            <TextView
+                android:id="@+id/tvUserMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px18dp"
+                android:text="驹币  334"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px36dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRecharge"
+            style="@style/btn_style"
+            android:layout_marginTop="@dimen/px110dp"
+            android:text="充值" />
+
+        <Button
+            android:id="@+id/btnGive"
+            style="@style/btn_style"
+            android:layout_marginTop="@dimen/px28dp"
+            android:text="赠送" />
+
+        <Button
+            android:id="@+id/btnRenew"
+            style="@style/btn_style"
+            android:layout_marginTop="@dimen/px28dp"
+            android:text="会员续费" />
+    </LinearLayout>
+
+</LinearLayout>
